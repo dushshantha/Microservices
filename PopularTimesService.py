@@ -20,7 +20,7 @@ def getPopularTimes(place_id):
 
     api_key = request.args.get('apiKey')
     try:
-        return jsonify(populartimes.get_id(api_key, api_key))
+        return jsonify(populartimes.get_id(api_key, place_id))
     except Exception as ex:
         return notify_error(ex, HTTP_ERROR_SERVER)
 
