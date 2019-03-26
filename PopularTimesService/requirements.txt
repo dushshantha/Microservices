@@ -1,0 +1,7 @@
+Flask
+gunicorn
+nose
+git+https://github.com/m-wrzr/populartimes
+flask_jsonpify
+Sphinx
+coverage

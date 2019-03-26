@@ -29,4 +29,4 @@ def getPopularPlaces(api_key, types, p1, p2, n_threads = 10, radius =  3000, all
 
 
 if __name__ == '__main__':
-     app.run(port='5002')
+     app.run(port='5001')
