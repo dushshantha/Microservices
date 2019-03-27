@@ -28,8 +28,8 @@ def getPopularTimes(place_id):
 @app.route('/populartimes/search')
 def getPopularPlaces():
     n_threads = 10
-    radius =  3000
-    all_places = False
+    radius =  2000
+    all_places = True
 
     if 'apiKey' not in request.args or request.args['apiKey'] in ("", None):
         return notify_error("ERR_NO_ARG:  'apiKey' argument required to /populartimes/ API", HTTP_ERROR_CLIENT)
