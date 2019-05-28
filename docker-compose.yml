@@ -25,5 +25,5 @@ services:
     links:
       - populartimes_api:populartimes_api
       
-valumes:
+volumes:
   assets:
