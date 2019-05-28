@@ -9,7 +9,7 @@ services:
     ports:
       - "5001:5001"
     volumes:
-      - /usr/src/app/static
+      - assets:/usr/src/app/static
     env_file: .env
     command: /usr/local/bin/gunicorn -w 4 --bind :5001 PopularTimesService:app
 
@@ -20,7 +20,10 @@ services:
       - "80"
     ports:
       - "80:80"
-    volumes_from:
-      - populartimes_api
+    volumes:
+      - assets
     links:
       - populartimes_api:populartimes_api
+      
+valumes:
+  assets:
