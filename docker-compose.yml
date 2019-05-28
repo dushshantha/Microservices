@@ -3,6 +3,7 @@ version: '3'
 services:
   populartimes_api:
     restart: always
+    image: 127.0.0.1:5000/populartimes
     build: ./PopularTimesService
     expose:
       - "5001"
