@@ -23,7 +23,7 @@ services:
     ports:
       - "80:80"
     volumes:
-      - assets
+      - assets:/usr/src/app/static
     links:
       - populartimes_api:populartimes_api
       
